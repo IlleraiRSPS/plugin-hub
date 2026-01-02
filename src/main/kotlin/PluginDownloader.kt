@@ -147,7 +147,7 @@ object PluginDownloader {
         Paths.get(PluginHubConstants.PLUGIN_HUB_BASE_PATH, PluginHubConstants.PLUGIN_HUB_OUTPUT_DIRECTORY, "manifest").createDirectory()
         writeLiteManifest(manifestLite)
         writeFullManifest(manifestFull)
-        commitFiles("https://github.com/ValamorePS/hosting.git",args.first(),Paths.get(PluginHubConstants.PLUGIN_HUB_BASE_PATH, PluginHubConstants.PLUGIN_HUB_OUTPUT_DIRECTORY))
+        commitFiles("https://github.com/IlleraiRSPS/hosting.git",args.first(),Paths.get(PluginHubConstants.PLUGIN_HUB_BASE_PATH, PluginHubConstants.PLUGIN_HUB_OUTPUT_DIRECTORY))
     }
 
     fun loadManifestData(pluginToManifest: MutableMap<String, MutableList<Pair<String, String>>>, manifestData: MutableMap<String, ManifestFull>) {
